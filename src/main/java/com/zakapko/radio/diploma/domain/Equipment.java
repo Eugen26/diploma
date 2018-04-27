@@ -3,13 +3,19 @@ package com.zakapko.radio.diploma.domain;
 import java.util.List;
 
 public class Equipment {
+    private int id;
     private int price;
-    private String specialization;
+    private int durability;
+    private String name;
+    private String type;
     private List<Properties> properties;
 
-    public Equipment(int price, String specialization, List<Properties> properties) {
+    public Equipment() {
+    }
+
+    public Equipment(int price, String type, List<Properties> properties) {
         this.price = price;
-        this.specialization = specialization;
+        this.type = type;
         this.properties = properties;
     }
 
@@ -21,12 +27,12 @@ public class Equipment {
         this.price = price;
     }
 
-    public String getSpecialization() {
-        return specialization;
+    public String getType() {
+        return type;
     }
 
-    public void setSpecialization(String specialization) {
-        this.specialization = specialization;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public List<Properties> getProperties() {
@@ -35,5 +41,29 @@ public class Equipment {
 
     public void setProperties(List<Properties> properties) {
         this.properties = properties;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDurability(int durability) {
+        this.durability = durability;
+    }
+
+    public int getDurability() {
+        return durability;
     }
 }

@@ -5,11 +5,12 @@ import com.zakapko.radio.diploma.dao.EquipmentDao;
 import com.zakapko.radio.diploma.domain.Equipment;
 import com.zakapko.radio.diploma.domain.Model;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 import java.util.List;
 
-@org.springframework.stereotype.Service
+@Service
 public class EquipmentService {
     @Autowired
     EquipmentDao equipmentDao;
